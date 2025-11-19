@@ -45,8 +45,8 @@ tasks.withType(Test) {
     }
 }
 
-tasks.register('web_positive_test', Test) {
+tasks.register('web_simple', Test) {
     useJUnitPlatform {
-        includeTags('WEB_positiveCase')
+        includeTags('simple')
     }
 }
