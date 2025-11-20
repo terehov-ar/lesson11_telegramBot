@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("simple")
-public class PositiveTests {
+public class PositiveTests extends TestBase{
 
     @Test
     void someTest() {

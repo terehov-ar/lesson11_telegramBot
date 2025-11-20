@@ -11,14 +11,11 @@ import java.util.Map;
 
 public class TestBase {
 
-    public static String remoteAddress = System.getProperty("remoteAddress");
-
     @BeforeAll
     static void setupEnvironment() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 10000;
-//        Configuration.remote = remoteAddress;
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
